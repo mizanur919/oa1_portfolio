@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Portfolio</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <section class="header">
+      <div class="container">
+        <div class="header-menu">
+          <div class="logo">
+            <a href="#"><span>M</span>izan</a>
+          </div>
+          <div class="menu">
+            <ul id="menuList">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu-icon" onclick="toggleList()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-content">
+            <p class="dev-name">I am Mizan</p>
+            <p class="dev-title">
+              <span>Frontend &</span> <br />
+              <span>WordPress Developer</span>
+            </p>
+            <p class="dev-info">
+              I break down complex user experinece problems to create integritiy
+              focussed solutions that connect billions of people
+            </p>
+            <div class="hero-buttons">
+              <button>Download CV</button>
+              <div class="social-icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="assets/img/mizan.png" alt="Mizanur Rahaman" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me-section" id="about">
+      <div class="container">
+        <div class="about-me">
+          <div class="about-me-image">
+            <img src="assets/img/mizan cv.jpg" alt="" />
+          </div>
+          <div class="about-me-content">
+            <div>
+              <p class="about-me-title">About Me</p>
+              <p class="about-me-details">
+                We shifted our talents to frontier science because we wanted our
+                work to have tangible, human-positive impact.
+              </p>
+              <button>Download CV</button>
+            </div>
+            <div class="about-me-info">
+              <div>
+                <h2><span>Name :</span> Matthew Perry</h2>
+                <h2><span>Address :</span> Germany Office 478 Berlin</h2>
+              </div>
+              <div>
+                <h2><span>Phone :</span> +1 840 841 25 69</h2>
+                <h2><span>Email :</span> hello@design.com</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="projects">
+      <div class="container">
+        <div class="portfolio">
+          <div class="portfolio-content">
+            <div class="portfolio-title-details">
+              <p class="portfolio-title">My Recent Works</p>
+              <p class="portfolio-details">
+                We put your ideas and thus your wishes in the form of a unique
+                web project that inspires you and you customers.
+              </p>
+            </div>
+
+            <div class="mpprojects">
+              <div class="mpprojects__buttons">
+                <button class="button active" data-filter="*">All</button>
+                <button class="button" data-filter=".react">React</button>
+                <button class="button" data-filter=".wordpress">
+                  WordPress
+                </button>
+                <button class="button" data-filter=".htmlcss">
+                  HTML & CSS
+                </button>
+              </div>
+
+              <div class="gallery">
+                <!-- Item 01 -->
+                <div class="item react">
+                  <img src="assets/img/projects/img1.jpg" alt="" />
+                  <div class="overlay">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+                <!-- Item 02 -->
+                <div class="item wordpress">
+                  <img src="assets/img/projects/img2.jpg" alt="" />
+                  <div class="overlay">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+                <!-- Item 03 -->
+                <div class="item react">
+                  <img src="assets/img/projects/img3.jpg" alt="" />
+                  <div class="overlay">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+                <!-- Item 04 -->
+                <div class="item htmlcss">
+                  <img src="assets/img/projects/img4.jpg" alt="" />
+                  <div class="overlay">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+                <!-- Item 05 -->
+                <div class="item wordpress">
+                  <img src="assets/img/projects/img5.jpg" alt="" />
+                  <div class="overlay">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+                <!-- Item 06 -->
+                <div class="item react">
+                  <img src="assets/img/projects/img6.jpg" alt="" />
+                  <div class="overlay">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+                <!-- Item 07 -->
+                <div class="item htmlcss">
+                  <img src="assets/img/projects/img7.jpg" alt="" />
+                  <div class="overlay">
+                    <a href="#">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div class="contact-form">
+            <p class="contact-form-title">Let’s work together!</p>
+            <p class="contact-form-details">
+              I design and code beautifully simple things and i love what i do.
+              Just simple like that!
+            </p>
+            <form action="#" class="contact-data">
+              <div class="contact-info">
+                <input type="text" placeholder="First name" />
+                <input type="text" placeholder="Last name" />
+              </div>
+              <div class="contact-info">
+                <input type="email" placeholder="Email address" />
+                <input type="text" placeholder="Phone number" />
+              </div>
+              <select class="skills">
+                <option value="Choose service">Choose service</option>
+                <option value="WordPress">WordPress</option>
+                <option value="React">React</option>
+                <option value="HTML & CSS">HTML & CSS</option>
+              </select>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your message"
+                class="message"
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+          <div class="social-media">
+            <ul>
+              <li>
+                <i class="fa-solid fa-phone-volume fa-fw"></i>
+                <div>
+                  <span class="info-title">Phone</span>
+                  <span class="info">+8801829107878</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span class="info-title">Email</span>
+                  <span class="info">dev.mizanur919@gmail.com</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <span class="info-title">Address</span>
+                  <span class="info"
+                    >Road No: #03, Kunjachaya R/A, Textile, Chittagong.</span
+                  >
+                </div>
+              </li>
+            </ul>
+            <!-- <div class="item">
+              <div class="icon">
+                <i class="fa-solid fa-phone-volume fa-fw"></i>
+              </div>
+              <div>
+                <span>Phone</span>
+                <span>+8801829107878</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <span>Phone</span>
+                <span>+8801829107878</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <span>Address</span>
+                <span>+8801829107878</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer-section">
+      <div class="container">
+        <div class="footer">
+          <div class="logo">
+            <a href="#"><span>M</span>izan</a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <p>© 2024 All rights reserved by Mizan</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- scripts -->
+
+    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9fbe394319.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      var $galleryContainer = $(".gallery").isotope({
+        itemSelector: ".item",
+        layoutMode: "fitRows",
+      });
+      $(".mpprojects__buttons .button").on("click", function () {
+        $(".mpprojects__buttons .button").removeClass("active");
+        $(this).addClass("active");
+
+        var val = $(this).attr("data-filter");
+        $galleryContainer.isotope({
+          filter: val,
+        });
+      });
+    </script>
+
+    <script>
+      //   Responsive Menu
+      let menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      menuList.style.backgroundColor = "transparent";
+
+      function toggleList() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "300px";
+          menuList.style.backgroundColor = "var(--primary-color)";
+        } else {
+          menuList.style.maxHeight = "0px";
+          menuList.style.backgroundColor = "transparent";
+        }
+      }
+    </script>
+  </body>
+</html>
